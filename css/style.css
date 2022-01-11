@@ -393,9 +393,14 @@ body.lock {
 }
 
 .item__logo img {
-    position: absolute;
-    left: 45%;
-    top: 45%;
+    /* лого то которе надо*/
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .item:hover .item__logo {
@@ -407,6 +412,7 @@ body.lock {
 }
 
 .block__logo {
+    /* Отвечает за лого в текстовом  */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,16 +438,11 @@ body.lock {
 }
 
 .item__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    flex-direction: column;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
+    position: absolute;
     left: 0%;
     height: 100%;
     width: 100%;
@@ -456,23 +457,17 @@ body.lock {
 }
 
 .item__logo span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: Lato;
     font-size: 14px;
-    line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 60px;
+    margin-top: 15px;
     width: 100%;
 }
 
